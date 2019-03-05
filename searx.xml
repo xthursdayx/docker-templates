@@ -44,6 +44,6 @@
   </Environment>
   <WebUI>http://[IP]:[PORT:8888]/</WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/binhex/docker-templates/master/binhex/images/nzbhydra2-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/searx.png</Icon>
   <ExtraParams></ExtraParams>
 </Containers>
