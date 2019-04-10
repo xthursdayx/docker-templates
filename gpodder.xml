@@ -11,7 +11,7 @@
   <Project>https://gpodder.github.io/</Project>
   <Overview>unRAID template for GUI docker build of gPodder.</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
-  <WebUI>http://[IP]:[PORT:3389]/#/client/c/gPodder</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/#/client/c/gPodder</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/gpodder.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/gpodder.png</Icon>
   <ExtraParams/>
@@ -37,11 +37,6 @@
     </Publish>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir>/etc/localtime</HostDir>
-      <ContainerDir>/etc/localtime</ContainerDir>
-      <Mode>ro</Mode>
-    </Volume>
     <Volume>
       <HostDir>/mnt/cache/appdata/gpodder</HostDir>
       <ContainerDir>/config</ContainerDir>
@@ -74,7 +69,6 @@
   <Config Name="TZ" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
   <Config Name="Width" Target="WIDTH" Default="1280" Mode="" Description="Container Variable: WIDTH" Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
   <Config Name="Height" Target="HEIGHT" Default="720" Mode="" Description="Container Variable: HEIGHT" Type="Variable" Display="always" Required="false" Mask="false">720</Config>
-  <Config Name="Local_Time" Target="/etc/localtime" Default="/etc/localtime" Mode="ro" Description="Container Path: /etc/localtime" Type="Path" Display="always" Required="false" Mask="false">/etc/localtime</Config>
   <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/gpodder" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/gpodder</Config>
   <Config Name="Downloads" Target="/downloads" Default="/mnt/cache/Downloads/gPodder" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/Downloads/gPodder</Config>
   <Config Name="Web_Interface" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8282</Config>
