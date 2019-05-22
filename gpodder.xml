@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Container version="2">
   <Name>gPodder</Name>
   <Repository>xthursdayx/docker-gpodder</Repository>
@@ -38,7 +38,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/gpodder</HostDir>
+      <HostDir>/mnt/cache/appdata/gPodder</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -73,4 +73,5 @@
   <Config Name="Downloads" Target="/downloads" Default="/mnt/cache/Downloads/gPodder" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/Downloads/gPodder</Config>
   <Config Name="Web_Interface" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8282</Config>
   <Config Name="RDP" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3390</Config>
+<BaseImage>lsiobase/guacgui</BaseImage>
 </Container>
