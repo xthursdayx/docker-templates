@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ferdi-server</Name>
+  <Repository>xthursdayx/ferdi-server-docker</Repository>
+  <Registry>https://hub.docker.com/r/xthursdayx/ferdi-server-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/getferdi/server</Project>
+  <Overview/>unRAID template for docker build of Ferdi Server.</Overview>
+  <Category>Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>ttps://raw.githubusercontent.com/xthursdayx/docker-templates/master/ferdi-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/ferdi-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1568942575</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>unRAID template for docker build of Ferdi Server.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3333</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/ferdi-server</HostDir>
+      <ContainerDir>/usr/src/app</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
+  <Config Name="Config" Target="/usr/src/app" Default="/mnt/cache/appdata/ferdi-server" Mode="rw" Description="Container Path: /usr/src/app" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server</Config>
+</Container>
