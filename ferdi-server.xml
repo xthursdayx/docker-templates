@@ -2,25 +2,25 @@
 <Container version="2">
   <Name>ferdi-server</Name>
   <Repository>xthursdayx/ferdi-server-docker</Repository>
-  <Registry>https://hub.docker.com/r/xthursdayx/ferdi-server-docker</Registry>
+  <Registry>https://github.com/xthursdayx/ferdi-server-docker</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/getferdi/server</Project>
-  <Overview/>unRAID template for docker build of Ferdi Server.</Overview>
+  <Overview/>
   <Category>Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <TemplateURL/>ttps://raw.githubusercontent.com/xthursdayx/docker-templates/master/ferdi-server.xml</TemplateURL>
+  <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/ferdi-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1568942575</DateInstalled>
+  <DateInstalled>1569429839</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>unRAID template for docker build of Ferdi Server.</Description>
+  <Description/>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -34,12 +34,67 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/ferdi-server</HostDir>
-      <ContainerDir>/usr/src/app</ContainerDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>development</Value>
+      <Name>NODE_ENV</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>sqlite</Value>
+      <Name>DB_CONNECTION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>127.0.0.1</Value>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>DB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>root</Value>
+      <Name>DB_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>adonis</Value>
+      <Name>DB_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>IS_CREATION_ENABLED</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>true</Value>
+      <Name>CONNECT_WITH_FRANZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
   <Config Name="Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
-  <Config Name="Config" Target="/usr/src/app" Default="/mnt/cache/appdata/ferdi-server" Mode="rw" Description="Container Path: /usr/src/app" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server</Config>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="development" Mode="" Description="Container Variable: NODE_ENV" Type="Variable" Display="always" Required="false" Mask="false">development</Config>
+  <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Mode="" Description="Container Variable: DB_CONNECTION" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="127.0.0.1" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="Container Variable: DB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="root" Mode="" Description="Container Variable: DB_USER" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode="" Description="Container Variable: DB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="adonis" Mode="" Description="Container Variable: DB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false">adonis</Config>
+  <Config Name="IS_CREATION_ENABLED" Target="IS_CREATION_ENABLED" Default="true" Mode="" Description="Container Variable: IS_CREATION_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="Container Variable: CONNECT_WITH_FRANZ" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/ferdi-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server</Config>
 </Container>
