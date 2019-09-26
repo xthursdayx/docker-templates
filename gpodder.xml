@@ -28,15 +28,7 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   <DateInstalled>1569472915</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
-&amp;amp;#xD;&#xD;
-[br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&amp;amp;#xD;&#xD;
-  [b]/config[/b] - Location of gPodder persistent config.[br]&amp;amp;#xD;&#xD;
-  [b]/downloads[/b] - Location of downloads.[br]&amp;amp;#xD;&#xD;
-  [b]GUAC_USER[/b] for setting a username for the gPodder desktop GUI[br]&amp;amp;#xD;&#xD;
-  [b]GUAC_PASSS[/b] Password md5 hash for the gPodder desktop gui[br]&amp;amp;#xD;&#xD;
-[br][b]When creating this container you first need to generate an MD5 hash of your password. You can do this by running the command: [br]&amp;amp;#xD;&#xD;
-echo -n &amp;lt;your_password&amp;gt; | md5sum</Description>
+  <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
