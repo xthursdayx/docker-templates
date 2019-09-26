@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/xthursdayx/gpodder-docker</Support>
+  <Support>https://forums.unraid.net/topic/83812-support-xthursdayx-gpodder/</Support>
   <Project>https://gpodder.github.io/</Project>
   <Overview>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
 &amp;amp;#xD;&#xD;
