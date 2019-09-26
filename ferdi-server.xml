@@ -14,12 +14,12 @@
 Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Overview>
   <Category>Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/ferdi.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/ferdi-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1569472623</DateInstalled>
+  <DateInstalled>1569512294</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
@@ -29,7 +29,7 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>3333</HostPort>
+        <HostPort/>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -90,7 +90,7 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
+  <Config Name="Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="NODE_ENV" Target="NODE_ENV" Default="development" Mode="" Description="Container Variable: NODE_ENV" Type="Variable" Display="always" Required="false" Mask="false">development</Config>
   <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Mode="" Description="Container Variable: DB_CONNECTION" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
   <Config Name="DB_HOST" Target="DB_HOST" Default="127.0.0.1" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
@@ -101,3 +101,4 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   <Config Name="IS_CREATION_ENABLED" Target="IS_CREATION_ENABLED" Default="true" Mode="" Description="Container Variable: IS_CREATION_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="Container Variable: CONNECT_WITH_FRANZ" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/ferdi-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server</Config>
+</Container>
