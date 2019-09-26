@@ -56,7 +56,7 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Description>
     <Volume>
       <HostDir/>
       <ContainerDir>/downloads</ContainerDir>
-      <Mode>rw,slave</Mode>
+      <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/appdata/gPodder</HostDir>
