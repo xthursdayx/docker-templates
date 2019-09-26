@@ -9,7 +9,9 @@
   <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/getferdi/server</Project>
-  <Overview/>
+  <Overview>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
+&#xD;
+Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Overview>
   <Category>Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL/>
@@ -17,10 +19,12 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1569429839</DateInstalled>
+  <DateInstalled>1569472623</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
+&#xD;
+Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -97,4 +101,3 @@
   <Config Name="IS_CREATION_ENABLED" Target="IS_CREATION_ENABLED" Default="true" Mode="" Description="Container Variable: IS_CREATION_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="Container Variable: CONNECT_WITH_FRANZ" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/ferdi-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server</Config>
-</Container>
