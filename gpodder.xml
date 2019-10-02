@@ -25,7 +25,7 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1569472915</DateInstalled>
+  <DateInstalled>1569980751</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.</Description>
@@ -33,12 +33,12 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort/>
+        <HostPort>3389</HostPort>
         <ContainerPort>3389</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort/>
+        <HostPort>8080</HostPort>
         <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -48,7 +48,7 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
     <Volume>
       <HostDir/>
       <ContainerDir>/downloads</ContainerDir>
-      <Mode>rw</Mode>
+      <Mode>rw,slave</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/appdata/gPodder</HostDir>
@@ -58,7 +58,7 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>admin</Value>
       <Name>GUAC_USER</Name>
       <Mode/>
     </Variable>
@@ -85,9 +85,9 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   </Environment>
   <Labels/>
   <Config Name="Downloads" Target="/downloads" Default="/mnt/cache/Downloads/gPodder" Mode="rw,slave" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="RDP" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="Web_Interface" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false"/>
-  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Username for the gPodder desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="RDP" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
+  <Config Name="Web_Interface" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Username for the gPodder desktop gui." Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
   <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Password md5 hash for the gPodder desktop gui." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="TZ" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
   <Config Name="Width" Target="WIDTH" Default="1280" Mode="" Description="Container Variable: WIDTH" Type="Variable" Display="always" Required="false" Mask="false">1280</Config>
