@@ -19,7 +19,7 @@
 [br][b]When creating this container you first need to generate an MD5 hash of your password. You can do this by running the command: [br]&amp;amp;#xD;&#xD;
 echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
-  <WebUI>http://[IP]:[PORT:8080]/#/client/c/gPodder</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/gpodder.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/gpodder-icon.png</Icon>
   <ExtraParams/>
