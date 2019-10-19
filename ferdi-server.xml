@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>ferdi-server</Name>
-  <Repository>xthursdayx/ferdi-server-docker</Repository>
-  <Registry>https://github.com/xthursdayx/ferdi-server-docker</Registry>
+  <Repository>getferdi/ferdi-server</Repository>
+  <Registry>https://hub.docker.com/r/getferdi/ferdi-server</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/83813-support-xthursdayx-ferdi-server/</Support>
   <Project>https://github.com/getferdi/server</Project>
   <Overview>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
 &#xD;
@@ -19,7 +19,7 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1569980146</DateInstalled>
+  <DateInstalled>1571513255</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
@@ -37,18 +37,18 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/ferdi-server/recipes</HostDir>
+      <HostDir/>
       <ContainerDir>/usr/src/app/recipes</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/ferdi-server</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir/>
+      <ContainerDir>/usr/src/app/database</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/ferdi-server/database</HostDir>
-      <ContainerDir>/usr/src/app/database</ContainerDir>
+      <HostDir/>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -110,7 +110,7 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="adonis" Mode="" Description="Container Variable: DB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false">adonis</Config>
   <Config Name="IS_CREATION_ENABLED" Target="IS_CREATION_ENABLED" Default="true" Mode="" Description="Container Variable: IS_CREATION_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="Container Variable: CONNECT_WITH_FRANZ" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="Recipes" Target="/usr/src/app/recipes" Default="" Mode="rw" Description="Container Path: /usr/src/app/recipes" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server/recipes</Config>
-  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/ferdi-server" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server</Config>
-  <Config Name="Database" Target="/usr/src/app/database" Default="/mnt/cache/appdata/ferdi-server/database" Mode="rw" Description="Container Path: /usr/src/app/database" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server/database</Config>
+  <Config Name="Recipes" Target="/usr/src/app/recipes" Default="" Mode="rw" Description="Container Path: /usr/src/app/recipes" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database" Target="/usr/src/app/database" Default="" Mode="rw" Description="Container Path: /usr/src/app/database" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false"/>
 </Container>
