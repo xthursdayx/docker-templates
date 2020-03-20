@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/xthursdayx/yacreaderlibrary-server-docker/</Support>
   <Project>https://www.yacreader.com</Project>
-  <Overview>Headless version of the YACReaderLibraryServer</Overview>
+  <Overview>Headless version of the YACReaderLibraryServer. YACReader is the best comic reader and comic manager with support for cbr cbz zip rar comic files.</Overview>
   <Category>MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
@@ -17,10 +17,10 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1584731880</DateInstalled>
+  <DateInstalled>1584733384</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>Headless version of the YACReaderLibraryServer</Description>
+  <Description>Headless version of the YACReaderLibraryServer. YACReader is the best comic reader and comic manager with support for cbr cbz zip rar comic files.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
