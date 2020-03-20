@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>yacr</Name>
+  <Name>yacserver</Name>
   <Repository>xthursdayx/yacreaderlibrary-server-docker</Repository>
   <Registry>https://hub.docker.com/r/xthursdayx/yacreaderlibrary-server-docker/</Registry>
   <Network>bridge</Network>
