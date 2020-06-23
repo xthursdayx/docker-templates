@@ -38,12 +38,12 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   <Data>
     <Volume>
       <HostDir/>
-      <ContainerDir>/usr/src/app/recipes</ContainerDir>
+      <ContainerDir>/app/recipes</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir/>
-      <ContainerDir>/usr/src/app/database</ContainerDir>
+      <ContainerDir>/app/database</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
@@ -110,7 +110,7 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="adonis" Mode="" Description="Container Variable: DB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false">adonis</Config>
   <Config Name="IS_CREATION_ENABLED" Target="IS_CREATION_ENABLED" Default="true" Mode="" Description="Container Variable: IS_CREATION_ENABLED" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="Container Variable: CONNECT_WITH_FRANZ" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="Recipes" Target="/usr/src/app/recipes" Default="" Mode="rw" Description="Container Path: /usr/src/app/recipes" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Database" Target="/usr/src/app/database" Default="" Mode="rw" Description="Container Path: /usr/src/app/database" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Recipes" Target="/app/recipes" Default="" Mode="rw" Description="Container Path: /app/recipes" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database" Target="/app/database" Default="" Mode="rw" Description="Container Path: /app/database" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false"/>
 </Container>
