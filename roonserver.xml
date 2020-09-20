@@ -12,12 +12,12 @@
   <Overview>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Overview>
   <Category>MediaServer:Music</Category>
   <WebUI/>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/roonserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/roon-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1600573277</DateInstalled>
+  <DateInstalled>1600625302</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Description>
@@ -37,7 +37,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/Media/Music/</HostDir>
       <ContainerDir>/music</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -47,17 +47,10 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment>
-    <Variable>
-      <Value>America/New_York</Value>
-      <Name>TZ</Name>
-      <Mode/>
-    </Variable>
-  </Environment>
+  <Environment/>
   <Labels/>
   <Config Name="Config" Target="/app" Default="" Mode="rw" Description="Container Path: /app" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/</Config>
   <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/</Config>
-  <Config Name="Music" Target="/music" Default="/mnt/user/Media/Music/" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Music" Target="/music" Default="/mnt/user/Media/Music/" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/Music/</Config>
   <Config Name="Backup" Target="/backup" Default="/mnt/user/Backip/Roon_Backup" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Timezone" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="true" Mask="false">America/New_York</Config>
 </Container>
