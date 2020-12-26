@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/xthursdayx.jpeg</Icon>
+  <Profile>
+    Creating Docker containers and templates for Unraid users. Template support thread: https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/
+  </Profile>
+  <DonateLink>https://www.paypal.me/xthursdayx</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>
