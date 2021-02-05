@@ -2,8 +2,10 @@
 <Maintainer>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/xthursdayx.jpeg</Icon>
   <Profile>
-    Creating Docker containers and templates for Unraid users. Template support thread: https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/
+    I maintain a number of Docker images based on Alpine Linux and Ubuintu with the goal of producing simple, stable and user-friendly containers. I also create templates for Unraid users.
   </Profile>
-  <DonateLink>https://www.paypal.me/xthursdayx</DonateLink>
-  <DonateText>If you like my work please consider Donating.</DonateText>
+  <Matrix
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <DonateText>If you appreciate my work please consider buying me a coffee, cheers!</DonateText>
+  <Forum>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/</Forum>
 </Maintainer>
