@@ -17,9 +17,9 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1600625302</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DateInstalled>1612584320</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
   <Description>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Description>
   <Networking>
     <Mode>host</Mode>
@@ -27,30 +27,30 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/roonserver/</HostDir>
+      <HostDir>/mnt/cache/appdata/roonserver/app</HostDir>
       <ContainerDir>/app</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/roonserver/</HostDir>
+      <HostDir>/mnt/cache/appdata/roonserver/data</HostDir>
       <ContainerDir>/data</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Media/Music/</HostDir>
+      <HostDir>/mnt/user/Media/Music_library/</HostDir>
       <ContainerDir>/music</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir/>
+      <HostDir>/mnt/user/Backup/Roon_Backup/</HostDir>
       <ContainerDir>/backup</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
-  <Labels/>  
+  <Labels/>
   <Config Name="Config" Target="/app" Default="" Mode="rw" Description="Container Path: /app" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
   <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
-  <Config Name="Music" Target="/music" Default="/mnt/user/Media/Music/" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Backup" Target="/backup" Default="/mnt/user/Backip/Roon_Backup" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Music" Target="/music" Default="/mnt/user/Media/Music/" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/Music_library/</Config>
+  <Config Name="Backup" Target="/backup" Default="/mnt/user/Backip/Roon_Backup" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Backup/Roon_Backup/</Config>
 </Container>
