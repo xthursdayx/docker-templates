@@ -1,7 +1,3 @@
-**Application**
-
-N/A
-
 **Description**
 
 unRAID Docker Templates for Docker images in the "xthursdayx" repository.
@@ -18,3 +14,12 @@ Firstly you need to be running unRAID ver 6.0.0 or later, once installed follow 
 6. Click the "Advanced View" toggle on the top right and fill in required fields e.g. volume data, environment variables etc
 7. Click on the "Create" button at the bottom of the window to begin pulling down the Docker image
 8. Once the image is downloaded you should see it appear in the "Docker Containers" sub-tab
+
+**Forum**
+(https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/)[https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/]
+
+**Donate**
+
+If you appreciate my work please consider buying me a coffee, cheers! 😁
+
+<a href="https://www.buymeacoffee.com/xthursdayx" rel="external nofollow"><img src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate" width="74"/></a>  
