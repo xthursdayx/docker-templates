@@ -16,7 +16,7 @@ Firstly you need to be running unRAID ver 6.0.0 or later, once installed follow 
 8. Once the image is downloaded you should see it appear in the "Docker Containers" sub-tab
 
 **Forum**
-(https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/)[https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/]
+[Forum](https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/)
 
 **Donate**
 
