@@ -4,6 +4,9 @@ unRAID Docker Templates for Docker images in the "xthursdayx" repository.
 
 **Usage**
 
+All templates are avaialble through the [Community Applications](https://raw.githubusercontent.com/Squidly271/community.applications/master/plugins/community.applications.plg
+) plugin on UNRAID.
+
 Firstly you need to be running unRAID ver 6.0.0 or later, once installed follow the instructions below:-
 
 1. Navigate to "Docker" tab and then the "Docker Repositories" sub-tab in the unRAID webui
