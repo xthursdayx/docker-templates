@@ -25,10 +25,18 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1569980751</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
-  <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.</Description>
+  <DateInstalled>1612583759</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
+&amp;amp;#xD;&#xD;
+[br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&amp;amp;#xD;&#xD;
+  [b]/config[/b] - Location of gPodder persistent config.[br]&amp;amp;#xD;&#xD;
+  [b]/downloads[/b] - Location of downloads.[br]&amp;amp;#xD;&#xD;
+  [b]GUAC_USER[/b] for setting a username for the gPodder desktop GUI[br]&amp;amp;#xD;&#xD;
+  [b]GUAC_PASSS[/b] Password md5 hash for the gPodder desktop gui[br]&amp;amp;#xD;&#xD;
+[br][b]When creating this container you first need to generate an MD5 hash of your password. You can do this by running the command: [br]&amp;amp;#xD;&#xD;
+echo -n &amp;lt;your_password&amp;gt; | md5sum</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -46,9 +54,9 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
+      <HostDir>/downloads</HostDir>
       <ContainerDir>/downloads</ContainerDir>
-      <Mode>rw,slave</Mode>
+      <Mode>rw</Mode>
     </Volume>
     <Volume>
       <HostDir>/mnt/cache/appdata/gPodder</HostDir>
@@ -84,7 +92,7 @@ echo -n &amp;lt;your_password&amp;gt; | md5sum</Overview>
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Downloads" Target="/downloads" Default="/mnt/cache/Downloads/gPodder" Mode="rw,slave" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Downloads" Target="/downloads" Default="/mnt/cache/Downloads/gPodder" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false">/downloads</Config>
   <Config Name="RDP" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
   <Config Name="Web_Interface" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
   <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Username for the gPodder desktop gui." Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
