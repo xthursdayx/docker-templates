@@ -9,9 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/83813-support-xthursdayx-ferdi-server/</Support>
   <Project>https://github.com/getferdi/server</Project>
-  <Overview>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
-&#xD;
-Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Overview>
+  <Overview>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.
+  [br][br]
+  Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Overview>
   <Category>Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/ferdi-server.xml</TemplateURL>
@@ -22,8 +22,8 @@ Ferdi-server is an unofficial replacement of the Franz server for use with the F
   <DateInstalled>1612583317</DateInstalled>
   <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
   <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
-  <Description>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.&#xD;
-&#xD;
+  <Description>Ferdi is a hard-fork of Franz, a messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.[br]
+[br]
 Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Description>
   <Networking>
     <Mode>docker_net</Mode>
