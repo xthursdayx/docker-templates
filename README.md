@@ -17,7 +17,7 @@ Firstly you need to be running unRAID ver 6.0.0 or later, once installed follow 
 
 **Forum**
 
-[More informaiton available at the Unraid template Forum](https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/)
+More information available at the [Unraid template Forum](https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/)
 
 **Donate**
 
