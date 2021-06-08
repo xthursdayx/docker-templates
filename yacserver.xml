@@ -1,26 +1,34 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>yacserver</Name>
+  <Name>YACReaderLibraryServer</Name>
   <Repository>xthursdayx/yacreaderlibrary-server-docker</Repository>
   <Registry>https://hub.docker.com/r/xthursdayx/yacreaderlibrary-server-docker/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>sh</Shell>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/r/xthursdayx/yacreaderlibrary-server-docker/</Support>
   <Project>https://www.yacreader.com</Project>
-  <Overview>Headless version of the YACReaderLibraryServer. YACReader is the best comic reader and comic manager with support for cbr cbz zip rar comic files.</Overview>
+  <Overview>Headless version of the YACReaderLibraryServer.&#xD;
+&#xD;
+YACReader is the best comic reader and comic manager available, with support for cbr, cbz, zip, and rar comic files.&#xD;
+&#xD;
+YACReaderLibraryServer makes it easy to run a home comics server to serve your comics to any device running a YACReader client (including Windows, MacOS, Linux, and iOS).</Overview>
   <Category>MediaServer:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/yacserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/yacreader-icon.png</Icon>
-  <ExtraParams/>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1612584152</DateInstalled>
-  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;</DonateText>
+  <DateInstalled>1623194831</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
   <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
-  <Description>Headless version of the YACReaderLibraryServer. YACReader is the best comic reader and comic manager with support for cbr cbz zip rar comic files.</Description>
+  <Description>Headless version of the YACReaderLibraryServer.&#xD;
+&#xD;
+YACReader is the best comic reader and comic manager available, with support for cbr, cbz, zip, and rar comic files.&#xD;
+&#xD;
+YACReaderLibraryServer makes it easy to run a home comics server to serve your comics to any device running a YACReader client (including Windows, MacOS, Linux, and iOS).</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -33,13 +41,38 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/Media/Comics/</HostDir>
+      <HostDir/>
       <ContainerDir>/comics</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/yacreaderlibraryserver</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>America/New_York</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
-  <Config Name="Host Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Host Path 1" Target="/comics" Default="" Mode="rw" Description="Container Path: /comics" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/Comics/</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="TZ" Target="TZ" Default="America/New_York" Mode="" Description="Time Zone" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Comics" Target="/comics" Default="" Mode="rw" Description="Container Path: /comics" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/yacreaderlibraryserver" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/yacreaderlibraryserver</Config>
 </Container>
