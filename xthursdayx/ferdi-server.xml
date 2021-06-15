@@ -14,8 +14,8 @@
   Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Overview>
   <Category>Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/ferdi-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/ferdi-icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/ferdi-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/ferdi-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
