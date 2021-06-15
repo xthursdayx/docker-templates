@@ -1,23 +1,22 @@
-<?xml version="1.0"?>
+<?xml version="1.0">
 <Container version="2">
   <Name>gPodder</Name>
   <Repository>xthursdayx/gpodder-docker</Repository>
   <Registry>https://hub.docker.com/r/xthursdayx/gpodder-docker/</Registry>
   <Network>bridge</Network>
   <MyIP/>
-  <Shell>sh</Shell>
+  <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/83812-support-xthursdayx-gpodder/</Support>
   <Project>https://gpodder.github.io/</Project>
   <Overview>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/gpodder-icon.png</Icon>
+  <TemplateURL/>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/gpodder.xml</TemplateURL
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/gpodder-icon.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1623111356</DateInstalled>
   <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
   <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
   <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
@@ -88,8 +87,8 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
   <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Optional - Username for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Optional - MD5 hash of your password for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
