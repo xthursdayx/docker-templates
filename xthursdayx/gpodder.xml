@@ -1,4 +1,4 @@
-<?xml version="1.0">
+<?xml version="1.0"?>
 <Container version="2">
   <Name>gPodder</Name>
   <Repository>xthursdayx/gpodder-docker</Repository>
@@ -9,17 +9,29 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/83812-support-xthursdayx-gpodder/</Support>
   <Project>https://gpodder.github.io/</Project>
-  <Overview>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.</Overview>
+  <Overview>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
+&amp;amp;#xD;&#xD;
+[br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&amp;amp;#xD;&#xD;
+  [b]/config[/b] - Location of gPodder persistent config.[br]&amp;amp;#xD;&#xD;
+  [b]/downloads[/b] - Location of downloads.[br]&amp;amp;#xD;&#xD;
+  [b]PUID[/b] - set UserID[br]&amp;amp;#xD;&#xD;
+  [b]PGID[/b] - set GroupID[br]&amp;amp;#xD;&#xD;
+ [b]8080:[/b] - HTTP GUI access[br]&amp;amp;#xD;&#xD;
+ [b]3389[/b] - RDP access[br]&amp;amp;#xD;&#xD;
+  [b]GUAC_USER[/b] for setting a username for the gPodder desktop GUI #optional[br]&amp;amp;#xD;&#xD;
+  [b]GUAC_PASSS[/b] Password md5 hash for the gPodder desktop GUI #optional[br]&amp;amp;#xD;&#xD;
+[br][b]When creating this container you first need to generate an MD5 hash of your password. You can do this by running the command: [br]&amp;amp;#xD;&#xD;
+`echo -n password | openssl md5` &amp;amp; `printf '%s' password | md5sum`</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL/>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/gpodder.xml</TemplateURL
+  <TemplateURL/>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/gpodder.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/gpodder-icon.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1623725314</DateInstalled>
-  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
-  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <DateInstalled>1623725708</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
   <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
 &amp;amp;#xD;&#xD;
 [br][br][b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&amp;amp;#xD;&#xD;
@@ -37,12 +49,12 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>8080</HostPort>
+        <HostPort/>
         <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
-        <HostPort>3389</HostPort>
+        <HostPort/>
         <ContainerPort>3389</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -88,13 +100,13 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
   <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
   <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Optional - Username for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Optional - MD5 hash of your password for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
-  <Config Name="RDP Port" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
+  <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="RDP Port" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false"/>
   <Config Name="Downloads Path" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/>
   <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/gpodder" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/gPodder</Config>
 </Container>
