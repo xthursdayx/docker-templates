@@ -12,8 +12,8 @@
   <Overview>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Overview>
   <Category>MediaServer:Music</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/roonserver.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/roon-icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/roonserver.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/roon-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
