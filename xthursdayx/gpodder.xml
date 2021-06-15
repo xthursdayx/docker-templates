@@ -17,6 +17,7 @@
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
+  <DateInstalled>1623725314</DateInstalled>
   <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
   <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
   <Description>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
