@@ -3,12 +3,20 @@
   <Name>YACReaderLibraryServer</Name>
   <Repository>xthursdayx/yacreaderlibrary-server-docker</Repository>
   <Registry>https://hub.docker.com/r/xthursdayx/yacreaderlibrary-server-docker/</Registry>
+  <Branch>
+  <Tag>lastest</Tag>
+  <TagDescription>YACReaderLibraryServer compiled with unarr decompression - default</TagDescription>
+  </Branch>
+  <Branch>
+  <Tag>pzip</Tag>
+  <TagDescription>YACReaderLibraryServer compiled with p7zip - see Docker Support for more information</TagDescription>
+  </Branch>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/xthursdayx/yacreaderlibrary-server-docker/</Support>
-  <Project>https://www.yacreader.com</Project>
+  <Support>https://forums.unraid.net/topic/110003-support-xthursdayx-yacreaderlibraryserver/</Support>
+  <Project>https://www.yacreader.com</Project> 
   <Overview>Headless version of the YACReaderLibraryServer.&#xD;
 &#xD;
 YACReader is the best comic reader and comic manager available, with support for cbr, cbz, zip, and rar comic files.&#xD;
@@ -45,7 +53,7 @@ YACReaderLibraryServer makes it easy to run a home comics server to serve your c
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/yacreaderlibraryserver</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -73,5 +81,5 @@ YACReaderLibraryServer makes it easy to run a home comics server to serve your c
   <Config Name="TZ" Target="TZ" Default="America/New_York" Mode="" Description="Time Zone" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
   <Config Name="Port 1" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Comics" Target="/comics" Default="" Mode="rw" Description="Container Path: /comics" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Config" Target="/config" Default="/mnt/cache/appdata/yacreaderlibraryserver" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/yacreaderlibraryserver</Config>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
 </Container>
