@@ -12,8 +12,8 @@
   <Overview>Coturn TURN Server is a VoIP media traffic NAT traversal server and gateway. It can be used as a general-purpose network traffic TURN server and gateway, too.</Overview>
   <Category>Network:Voip</Category>
   <WebUI/>
-  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/coturn.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/images/webrtc-icon.png</Icon>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/coturn.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/webrtc-icon.png</Icon>
   <ExtraParams/>
   <PostArgs>-c /coturn/turnserver.conf</PostArgs>
   <CPUset/>
