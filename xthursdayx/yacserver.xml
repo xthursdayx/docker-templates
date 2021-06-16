@@ -8,7 +8,7 @@
   <TagDescription>YACReaderLibraryServer compiled with unarr decompression - default</TagDescription>
   </Branch>
   <Branch>
-  <Tag>pzip</Tag>
+  <Tag>p7zip</Tag>
   <TagDescription>YACReaderLibraryServer compiled with p7zip - see Docker Support for more information</TagDescription>
   </Branch>
   <Network>bridge</Network>
