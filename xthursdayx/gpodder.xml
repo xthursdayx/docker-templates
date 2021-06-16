@@ -100,13 +100,13 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/New_York</Config>
-  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Optional - Username for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/></Config>
-  <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Optional - MD5 hash of your password for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/></Config>
-  <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false"/></Config>
-  <Config Name="RDP Port" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false"/></Config>
-  <Config Name="Downloads Path" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/></Config>
-  <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/gpodder" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/gPodder</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="Time Zone" Target="TZ" Default="America/New_York" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GUAC_USER" Target="GUAC_USER" Default="" Mode="" Description="Optional - Username for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GUAC_PASS" Target="GUAC_PASS" Default="" Mode="" Description="Optional - MD5 hash of your password for Guacamole's web interface" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="HTTP Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="RDP Port" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false"/>
+  <Config Name="Downloads Path" Target="/downloads" Default="" Mode="rw" Description="Container Path: /downloads" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/gpodder" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced" Required="true" Mask="false"/>
 </Container>
