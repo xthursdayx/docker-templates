@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/instrumentisto/coturn-docker-image</Support>
+  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/</Support>
   <Project>https://github.com/coturn/coturn</Project>
   <Overview>Coturn TURN Server is a VoIP media traffic NAT traversal server and gateway. It can be used as a general-purpose network traffic TURN server and gateway, too.</Overview>
   <Category>Network:Voip</Category>
