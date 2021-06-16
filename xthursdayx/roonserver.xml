@@ -14,7 +14,7 @@
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/roonserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/roon-icon.png</Icon>
-  <ExtraParams/>--restart unless-stopped</ExtraParams>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1612584320</DateInstalled>
@@ -49,8 +49,8 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Config" Target="/app" Default="/mnt/cache/appdata/roonserver/app/" Mode="rw" Description="Container Path: /app" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
-  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
-  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Config" Target="/app" Default="/mnt/cache/appdata/roonserver/app/" Mode="rw" Description="Container Path: /app" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
+  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
