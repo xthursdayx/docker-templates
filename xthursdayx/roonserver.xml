@@ -7,14 +7,14 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/steefdebruijn/docker-roonserver</Support>
+  <Support>https://forums.unraid.net/topic/82714-roon-docker-unraid-roon-support-steefdebruijndocker-roonserver</Support>
   <Project>https://roonlabs.com/</Project>
   <Overview>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Overview>
   <Category>MediaServer:Music</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/roonserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/roon-icon.png</Icon>
-  <ExtraParams/>
+  <ExtraParams/>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1612584320</DateInstalled>
@@ -37,20 +37,20 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Media/Music_library/</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/music</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/Backup/Roon_Backup/</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/backup</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Config" Target="/app" Default="" Mode="rw" Description="Container Path: /app" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
-  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
-  <Config Name="Music" Target="/music" Default="/mnt/user/Media/Music/" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Media/Music_library/</Config>
-  <Config Name="Backup" Target="/backup" Default="/mnt/user/Backip/Roon_Backup" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Backup/Roon_Backup/</Config>
+  <Config Name="Config" Target="/app" Default="/mnt/cache/appdata/roonserver/app/" Mode="rw" Description="Container Path: /app" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
+  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"></Config>
 </Container>
