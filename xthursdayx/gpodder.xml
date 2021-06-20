@@ -24,7 +24,7 @@
 `echo -n password | openssl md5` &amp;amp; `printf '%s' password | md5sum`</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL/>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/gpodder.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/gpodder.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/gpodder-icon.png</Icon>
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
