@@ -11,8 +11,8 @@
   <Project>https://github.com/TheDavidDelta/lingva-translate</Project>
   <Overview>Alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available</Overview>
   <Category>Productivity: Tools:</Category>
-  <WebUI>http://[IP]:[3000]</WebUI>
-  <TemplateURL/>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://github.com/xthursdayx/docker-templates/edit/master/xthursdayx/lingva.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/lingva-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
@@ -35,7 +35,7 @@
   <Data/>
   <Environment>
     <Variable>
-      <Value>&lt;your.lingva.domain&gt;</Value>
+      <Value/>
       <Name>site_domain</Name>
       <Mode/>
     </Variable>
