@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>lingva</Name>
+  <Repository>thedaviddelta/lingva-translate:latest</Repository>
+  <Registry>https://hub.docker.com/r/thedaviddelta/lingva-translate</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/TheDavidDelta/lingva-translate</Project>
+  <Overview>Alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/lingva-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1630919359</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Description>Alternative, privacy-orienteed front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available and no Google tracking.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>&lt;your.lingva.domain&gt;</Value>
+      <Name>site_domain</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Domain" Target="site_domain" Default="lingva.ml" Mode="" Description="The domain address where you will host Lingva" Type="Variable" Display="always" Required="true" Mask="false">&lt;your.lingva.domain&gt;</Config>
+</Container>
