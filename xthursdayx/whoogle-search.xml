@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>whoogle-search</Name>
+  <Repository>benbusby/whoogle-search</Repository>
+  <Registry>https://hub.docker.com/r/benbusby/whoogle-search</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://pypi.org/project/whoogle-search/</Project>
+  <Overview>Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Easily deployable in one click as a Docker app, and customizable with a single config file. Quick and simple to implement as a primary search engine replacement on both desktop and mobile.&#xD;
+&#xD;
+&#xD;
+&#xD;
+Check out https://github.com/benbusby/whoogle-search for more environmental configuration options.</Overview>
+  <Category>Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:5000]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/whoogle-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1630926365</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Description>Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Easily deployable in one click as a Docker app, and customizable with a single config file. Quick and simple to implement as a primary search engine replacement on both desktop and mobile.&#xD;
+&#xD;
+&#xD;
+&#xD;
+Check out https://github.com/benbusby/whoogle-search for more environmental configuration options.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_PROXY_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_PROXY_PASS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_PROXY_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_PROXY_LOC</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_ALT_TW</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_ALT_YT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_ALT_IG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_ALT_RD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>WHOOGLE_ALT_TL</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Port" Target="5000" Default="" Mode="tcp" Description="Whoogle UI Port" Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+  <Config Name="Whoogle Username" Target="WHOOGLE_USER" Default="" Mode="" Description="Whoogle user name, optional." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Whoogle Password" Target="WHOOGLE_PASS" Default="" Mode="" Description="Whoogle password, optional." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Proxy Username" Target="WHOOGLE_PROXY_USER" Default="" Mode="" Description="Proxy username, optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Proxy Password" Target="WHOOGLE_PROXY_PASS" Default="" Mode="" Description="Proxy password, optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Proxy Type" Target="WHOOGLE_PROXY_TYPE" Default="" Mode="" Description=" The type of proxy server, " Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Proxy Location" Target="WHOOGLE_PROXY_LOC" Default="" Mode="" Description="The location of the proxy server (host or ip). Optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Alternative Twitter frontend" Target="WHOOGLE_ALT_TW" Default="" Mode="" Description="The twitter.com alternative to use. For example, nitter.net or a local instance. Optional.&#13;&#10;" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Alternative YouTube frontend" Target="WHOOGLE_ALT_YT" Default="" Mode="" Description="The youtube.com alternative to use. For example, invidious.snopyta.org or a local instance. Optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Alternative Instagram frontend" Target="WHOOGLE_ALT_IG" Default="" Mode="" Description="The instagram.com alternative to use. For example, bibliogram.art or a local instance. Optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Alternative Reddit frontend" Target="WHOOGLE_ALT_RD" Default="" Mode="" Description="The reddit.com alternative to use. For example, libredd.it or a local instance. Optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Alternative Google Translate frontend" Target="WHOOGLE_ALT_TL" Default="" Mode="" Description="The Google Translate alternative to use. This is used for all translate_ searches. For example, lingva.ml or a local instance. Optional." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
