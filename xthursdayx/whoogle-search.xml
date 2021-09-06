@@ -16,7 +16,7 @@
 Check out https://github.com/benbusby/whoogle-search for more environmental configuration options.</Overview>
   <Category>Tools: Other:</Category>
   <WebUI>http://[IP]:[PORT:5000]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://github.com/xthursdayx/docker-templates/blob/master/xthursdayx/whoogle-search.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/whoogle-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
