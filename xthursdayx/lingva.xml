@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support> https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates</support>
+  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates</Support>
   <Project>https://github.com/TheDavidDelta/lingva-translate</Project>
   <Overview>Alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available</Overview>
   <Category>Productivity: Tools:</Category>
