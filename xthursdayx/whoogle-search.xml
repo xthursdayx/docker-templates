@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/</Support>
-  <Project>https://pypi.org/project/whoogle-search/</Project>
+  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates</Support>
+  <Project>https://pypi.org/project/whoogle-search</Project>
   <Overview>Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Easily deployable in one click as a Docker app, and customizable with a single config file. Quick and simple to implement as a primary search engine replacement on both desktop and mobile.&#xD;
 &#xD;
 &#xD;
@@ -22,8 +22,8 @@ Check out https://github.com/benbusby/whoogle-search for more environmental conf
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1630926365</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
   <Requires/>
   <Description>Get Google search results, but without any ads, javascript, AMP links, cookies, or IP address tracking. Easily deployable in one click as a Docker app, and customizable with a single config file. Quick and simple to implement as a primary search engine replacement on both desktop and mobile.&#xD;
 &#xD;
