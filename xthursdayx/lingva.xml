@@ -1,32 +1,32 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>lingva</Name>
-  <Repository>thedaviddelta/lingva-translate:latest</Repository>
+  <Repository>thedaviddelta/lingva-translate</Repository>
   <Registry>https://hub.docker.com/r/thedaviddelta/lingva-translate</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support> https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates</support>
-  <Project>https://github.com/TheDavidDelta/lingva-translate</Project>
+  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/</support>
+  <Project>https://github.com/TheDavidDelta/lingva-translate/</Project>
   <Overview>Alternative front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL>https://github.com/xthursdayx/docker-templates/edit/master/xthursdayx/lingva.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/lingva.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/lingva-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1630919359</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
   <Requires/>
   <Description>Alternative, privacy-orienteed front-end for Google Translate, serving as a Free and Open Source translator with over a hundred languages available and no Google tracking.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>3000</HostPort>
+        <HostPort/>
         <ContainerPort>3000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -41,6 +41,6 @@
     </Variable>
   </Environment>
   <Labels/>
-  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
-  <Config Name="Domain" Target="site_domain" Default="lingva.ml" Mode="" Description="The domain address where you will host Lingva" Type="Variable" Display="always" Required="true" Mask="false">&lt;your.lingva.domain&gt;</Config>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="Container Port: 3000" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="Domain" Target="site_domain" Default="lingva.ml" Mode="" Description="The domain address where you will host Lingva" Type="Variable" Display="always" Required="true" Mask="false"/>
 </Container>
