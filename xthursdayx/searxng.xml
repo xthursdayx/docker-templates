@@ -18,7 +18,7 @@ And check out SearxNG's expansive changelog here: https://github.com/searxng/sea
 </Overview>
   <Category>Productivity: Other: Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/searx.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/searxng.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/searxng-icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
