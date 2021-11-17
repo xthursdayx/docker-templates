@@ -12,8 +12,7 @@
   <Overview>gPodder is a simple, open source podcast client written in Python using GTK+. In development since 2005 with a proven, mature codebase.&amp;amp;#xD;&#xD;
 &amp;amp;#xD;&#xD;
 &#xD;
-&#xD;
-Configuration&#xD;
+Configuration:&#xD;
 &amp;amp;#xD;&#xD;
   /config - Location of gPodder persistent config.&#xD;
 &amp;amp;#xD;&#xD;
@@ -23,9 +22,7 @@ Configuration&#xD;
 &amp;amp;#xD;&#xD;
   PGID - set GroupID&#xD;
 &amp;amp;#xD;&#xD;
- 3000: - HTTP GUI access&#xD;
-&amp;amp;#xD;&#xD;
- 3389 - RDP access&#xD;
+ 3000 - WebUI access&#xD;
 &amp;amp;#xD;&#xD;
   PASSWORD for setting a password for the gPodder WebUI #optional&#xD;
 &amp;amp;#xD;</Overview>
@@ -36,7 +33,7 @@ Configuration&#xD;
   <ExtraParams>--restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1637180514</DateInstalled>
+  <DateInstalled>1637180685</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
@@ -47,3 +44,4 @@ Configuration&#xD;
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="true" Mask="false">100</Config>
   <Config Name="Config Path" Target="/config" Default="/mnt/cache/appdata/gpodder" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/gPodder</Config>
+</Container>
