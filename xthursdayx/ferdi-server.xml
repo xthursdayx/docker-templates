@@ -35,7 +35,7 @@
   <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="ferdi" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">ferdi</Config>
   <Config Name="DB_SSL" Target="DB_SSL" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="MAIL_CONNECTION" Target="MAIL_CONNECTION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp</Config>
-  <Config Name="SMPT_HOST" Target="SMPT_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
+  <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
   <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="2525" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2525</Config>
   <Config Name="MAIL_SSL" Target="MAIL_SSL" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="MAIL_USERNAME" Target="MAIL_USERNAME" Default="username" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">username</Config>
