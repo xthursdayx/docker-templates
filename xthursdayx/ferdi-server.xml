@@ -45,7 +45,7 @@
   <Config Name="IS_DASHBOARD_ENABLED" Target="IS_DASHBOARD_ENABLED" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="IS_REGISTRATION_ENABLED" Target="IS_REGISTRATION_ENABLED" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="DATA_DIR" Target="DATA_DIR" Default="data" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">data</Config>
+  <Config Name="DATA_DIR" Target="DATA_DIR" Default="/data" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/data</Config>
   <Config Name="/data" Target="/data" Default="/mnt/cache/appdata/ferdi-server/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/ferdi-server/data</Config>
   <Config Name="/app/recipes" Target="/app/recipes" Default="/mnt/cache/appdata/ferdi-server/recipes" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/ferdi-server/recipes</Config>
   <Config Name="Port" Target="3333" Default="3333" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3333</Config>
