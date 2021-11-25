@@ -16,7 +16,7 @@
   Ferdi-server is an unofficial replacement of the Franz server for use with the Ferdi Client.</Overview>
   <Category>Network:Messenger</Category>
   <WebUI>http://[IP]:[PORT:3333]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/ferdi-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/ferdi-icon.png</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
@@ -25,15 +25,15 @@
   <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
   <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
   <Requires/>
-  <Config Name="NODE_ENV" Target="NODE_ENV" Default="development" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">development</Config>
-  <Config Name="EXTERNAL_DOMAIN" Target="EXTERNAL_DOMAIN" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sqlite</Config>
-  <Config Name="DB_HOST" Target="DB_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
-  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
-  <Config Name="DB_USER" Target="DB_USER" Default="root" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
-  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="password" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
-  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="ferdi" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">ferdi</Config>
-  <Config Name="DB_SSL" Target="DB_SSL" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="development" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">development</Config>
+  <Config Name="APP_URL" Target="APP_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">sqlite</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="root" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">root</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="password" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="ferdi" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ferdi</Config>
+  <Config Name="DB_SSL" Target="DB_SSL" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
   <Config Name="MAIL_CONNECTION" Target="MAIL_CONNECTION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp</Config>
   <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
   <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="2525" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2525</Config>
