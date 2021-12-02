@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>standardnotes-web</Name>
+  <Repository>standardnotes/web:stable</Repository>
+  <Registry>https://hub.docker.com/r/standardnotes/web</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/</Support>
+  <Project>https://standardnotes.org/</Project>
+  <Overview>A safe and private place for your life's work.&#xD;
+&#xD;
+Standard Notes is a simple and private notes app available on most platforms, including Web, Mac, Windows, Linux, iOS, and Android.&#xD;
+&#xD;
+Before you start, make sure to copy the <a href="https://raw.githubusercontent.com/standardnotes/web/develop/.env.sample">sample .env.sample</a> to your standardnotes-web appdata directory and configure it with your parameters. Update the container ExtraParams accordingly.</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[3001]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/standardnotes-web.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/standardnotes-web-icon.png</Icon>
+  <ExtraParams>--env-file=/mnt/cache/appdata/standardnotes-web/.env</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1638485637</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <Requires/>
+  <Config Name="Port" Target="3001" Default="3001" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false"></Config>
+</Container>
