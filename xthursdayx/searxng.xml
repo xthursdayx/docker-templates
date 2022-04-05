@@ -60,6 +60,6 @@ And check out SearxNG's expansive changelog here: https://github.com/searxng/sea
   </Environment>
   <Labels/>
   <Config Name="Port" Target="8080" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false"/>
-  <Config Name="Config" Target="/etc/searx" Default="/mnt/cache/appdata/searx/" Mode="rw" Description="SearXNG's config location" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/etc/searxng" Default="/mnt/cache/appdata/searxng/" Mode="rw" Description="SearXNG's config location" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="SearXNG Instance Name" Target="INSTANCE_NAME" Default="" Mode="" Description="Your SearXNG instance name" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
