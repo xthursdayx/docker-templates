@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ferdium-server</Name>
+  <Repository>ferdium/ferdium-server:latest</Repository>
+  <Registry>https://github.com/ferdium/ferdium-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/127406-support-xthursdayx-ferdium-server/</Support>
+  <Project>https://github.com/ferdium/ferdium-server</Project>
+  <Overview>Server for Ferdium.&#xD;
+&#xD;
+Ferdium is a desktop app that helps you organize how you use your favourite apps by combining them into one application. It is based on Franz - a software already used by thousands of people - with the difference that Ferdium gives you many additional features and doesn't restrict its usage! Furthermore, Ferdium is compatible with your existing Franz account, so you can continue right where you left off. Please find out more about Ferdium and its features on ferdium.org.</Overview>
+  <Category>Network:Messenger</Category>
+  <WebUI>http://[IP]:[PORT:3333]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/ferdium-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/ferdium.png</Icon>
+  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1661067151</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;  &#xA0;      &#x200B;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <Requires/>
+  <Config Name="NODE_ENV" Target="NODE_ENV" Default="development" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">development</Config>
+  <Config Name="APP_URL" Target="APP_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="sqlite" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">sqlite</Config>
+  <Config Name="DB_HOST" Target="DB_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">127.0.0.1</Config>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="3306" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="DB_USER" Target="DB_USER" Default="root" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">root</Config>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="password" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">password</Config>
+  <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="ferdium" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">ferdium</Config>
+  <Config Name="DB_SSL" Target="DB_SSL" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">false</Config>
+  <Config Name="MAIL_CONNECTION" Target="MAIL_CONNECTION" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">smtp</Config>
+  <Config Name="SMTP_HOST" Target="SMTP_HOST" Default="127.0.0.1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
+  <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="2525" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2525</Config>
+  <Config Name="MAIL_SSL" Target="MAIL_SSL" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="MAIL_USERNAME" Target="MAIL_USERNAME" Default="username" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">username</Config>
+  <Config Name="MAIL_PASSWORD" Target="MAIL_PASSWORD" Default="password" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">password</Config>
+  <Config Name="MAIL_SENDER" Target="MAIL_SENDER" Default="noreply@getferdium.org" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">noreply@ferdium.org</Config>
+  <Config Name="IS_CREATION_ENABLED" Target="IS_CREATION_ENABLED" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="IS_DASHBOARD_ENABLED" Target="IS_DASHBOARD_ENABLED" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="IS_REGISTRATION_ENABLED" Target="IS_REGISTRATION_ENABLED" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="CONNECT_WITH_FRANZ" Target="CONNECT_WITH_FRANZ" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="DATA_DIR" Target="DATA_DIR" Default="/data" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">/data</Config>
+  <Config Name="/data" Target="/data" Default="/mnt/cache/appdata/ferdium-server/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/ferdium-server/data</Config>
+  <Config Name="/app/recipes" Target="/app/recipes" Default="/mnt/cache/appdata/ferdium-server/recipes" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/cache/appdata/ferdium-server/recipes</Config>
+  <Config Name="Port" Target="3333" Default="3333" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3333</Config>
+</Container>
