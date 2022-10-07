@@ -13,7 +13,7 @@
 &#xD;
 Standard Notes is a simple and private notes app available on most platforms, including Web, Mac, Windows, Linux, iOS, and Android.&#xD;
 &#xD;
-Before you start, make sure to copy the sample.env.sample (https://raw.githubusercontent.com/standardnotes/web/develop/.env.sample) to your standardnotes-web appdata directory and configure it with your parameters. Update the container ExtraParams accordingly.</Overview>
+Before you start, make sure to copy the sample.env.sample (https://github.com/standardnotes/app/blob/main/.env.sample) to your standardnotes-web appdata directory and configure it with your parameters. Update the container ExtraParams accordingly.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[3001]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/standardnotes-web.xml</TemplateURL>
