@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/82714-roon-docker-unraid-roon-support-steefdebruijndocker-roonserver</Support>
+  <Support>https://forums.unraid.net/topic/129853-support-xthursdayx-roonserver/</Support>
   <Project>https://roonlabs.com/</Project>
   <Overview>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Overview>
   <Category>MediaServer:Music</Category>
@@ -53,4 +53,5 @@
   <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
   <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Roon ARC" Target="55000" Default="55000" Mode="tcp" Description="Remote Listening Port" Type="Port" Display="always" Required="false" Mask="false">55000</Config>
 </Container>
