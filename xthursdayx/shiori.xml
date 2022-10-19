@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Shiori</Name>
+  <Repository>ghcr.io/go-shiori/shiori</Repository>
+  <Registry>https://ghcr.io/go-shiori/shiori</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/129860-support-xthursdayx-shiori/</Support>
+  <Project>https://github.com/go-shiori/shiori</Project>
+  <Overview>Shiori is a simple bookmarks manager written in the Go language. Intended as a simple clone of Pocket. &#xD;
+&#xD;
+Default Login&#xD;
+username: shiori&#xD;
+password: gopher&#xD;
+</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/shiori.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/shiori.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1666203659</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>>After starting container for the first time run the command `docker exec -it Shiori shiori migrate` from CLI to set up the database.</Requires>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8289</Config>
+  <Config Name="Config" Target="/shiori" Default="/mnt/cacte/appdata/shirori/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/shirori/</Config>
+  <Config Name="SHIORI_DBMS" Target="SHIORI_DBMS" Default="mysql" Mode="" Description="Shiori uses an SQLite3 database by default. If you prefer, you can use MySQL or PostgreSQL instead." Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
+  <Config Name="SHIORI_MYSQL_USER" Target="SHIORI_MYSQL_USER" Default="" Mode="" Description="Optional: MySQL user" Type="Variable" Display="always" Required="false" Mask="false">shiori</Config>
+  <Config Name="SHIORI_MYSQL_PASS" Target="SHIORI_MYSQL_PASS" Default="" Mode="" Description="Optional: Password for mysql user" Type="Variable" Display="always" Required="false" Mask="false">t774jKqVyt3WTKW83NDygTNncrUTwW</Config>
+  <Config Name="SHIORI_MYSQL_NAME" Target="SHIORI_MYSQL_NAME" Default="shiori" Mode="" Description="Optional: Name of database to use" Type="Variable" Display="always" Required="false" Mask="false">shiori</Config>
+  <Config Name="SHIORI_MYSQL_ADDRESS" Target="SHIORI_MYSQL_ADDRESS" Default="" Mode="" Description="Optional: Database address in the form tcp(x.x.x.x:3306)" Type="Variable" Display="always" Required="false" Mask="false">tcp(10.66.0.10:3306)</Config>
+</Container>
