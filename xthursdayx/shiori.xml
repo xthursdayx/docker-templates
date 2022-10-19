@@ -14,7 +14,8 @@
 Default Login&#xD;
 username: shiori&#xD;
 password: gopher&#xD;
-</Overview>
+&#xD;
+After starting container for the first time run the command `docker exec -it Shiori shiori migrate` from CLI to set up the database.</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/shiori.xml</TemplateURL>
@@ -26,11 +27,17 @@ password: gopher&#xD;
   <DonateText/>
   <DonateLink/>
   <Requires>>After starting container for the first time run the command `docker exec -it Shiori shiori migrate` from CLI to set up the database.</Requires>
-  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8289</Config>
+  <Config Name="Port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Config" Target="/shiori" Default="/mnt/cacte/appdata/shirori/" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/shirori/</Config>
-  <Config Name="SHIORI_DBMS" Target="SHIORI_DBMS" Default="mysql" Mode="" Description="Shiori uses an SQLite3 database by default. If you prefer, you can use MySQL or PostgreSQL instead." Type="Variable" Display="always" Required="false" Mask="false">mysql</Config>
-  <Config Name="SHIORI_MYSQL_USER" Target="SHIORI_MYSQL_USER" Default="" Mode="" Description="Optional: MySQL user" Type="Variable" Display="always" Required="false" Mask="false">shiori</Config>
-  <Config Name="SHIORI_MYSQL_PASS" Target="SHIORI_MYSQL_PASS" Default="" Mode="" Description="Optional: Password for mysql user" Type="Variable" Display="always" Required="false" Mask="false">t774jKqVyt3WTKW83NDygTNncrUTwW</Config>
-  <Config Name="SHIORI_MYSQL_NAME" Target="SHIORI_MYSQL_NAME" Default="shiori" Mode="" Description="Optional: Name of database to use" Type="Variable" Display="always" Required="false" Mask="false">shiori</Config>
-  <Config Name="SHIORI_MYSQL_ADDRESS" Target="SHIORI_MYSQL_ADDRESS" Default="" Mode="" Description="Optional: Database address in the form tcp(x.x.x.x:3306)" Type="Variable" Display="always" Required="false" Mask="false">tcp(10.66.0.10:3306)</Config>
+  <Config Name="SHIORI_DBMS" Target="SHIORI_DBMS" Default="" Mode="" Description="Shiori uses an SQLite3 database by default. If you prefer, you can use MySQL or PostgreSQL instead by adding mysql or postgresql here." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_MYSQL_USER" Target="SHIORI_MYSQL_USER" Default="" Mode="" Description="Optional: MySQL user" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_MYSQL_PASS" Target="SHIORI_MYSQL_PASS" Default="" Mode="" Description="Optional: Password for mysql user" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_MYSQL_NAME" Target="SHIORI_MYSQL_NAME" Default="shiori" Mode="" Description="Optional: Name of database to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_MYSQL_ADDRESS" Target="SHIORI_MYSQL_ADDRESS" Default="" Mode="" Description="Optional: Database address in the form tcp(x.x.x.x:3306)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_PG_USER" Target="SHIORI_PG_USER" Default="" Mode="" Description="Optional: Name of PostgreSQL user" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_PG_PASS" Target="SHIORI_PG_PASS" Default="" Mode="" Description="Optional: Password for PostgreSQL user" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_PG_NAME" Target="SHIORI_PG_NAME" Default="" Mode="" Description="Optional: Name of PostgreSQL database to use" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_PG_HOST" Target="SHIORI_PG_HOST" Default="" Mode="" Description="Optional: Address of PostgreSQL server" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="SHIORI_PG_PORT" Target="SHIORI_PG_PORT" Default="" Mode="" Description="Optional: Port number used by PostgreSQL server" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
 </Container>
