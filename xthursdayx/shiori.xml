@@ -40,4 +40,3 @@ After starting container for the first time run the command `docker exec -it Shi
   <Config Name="SHIORI_PG_HOST" Target="SHIORI_PG_HOST" Default="" Mode="" Description="Optional: Address of PostgreSQL server" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="SHIORI_PG_PORT" Target="SHIORI_PG_PORT" Default="" Mode="" Description="Optional: Port number used by PostgreSQL server" Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
-</Container>
