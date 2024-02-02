@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>nzbgetcom</Name>
+  <Repository>nzbgetcom/nzbget:latest</Repository>
+  <Registry>https://hub.docker.com/r/nzbgetcom/nzbget</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/88410-support-xthursdayx-unraid-docker-templates/</Support>
+  <Project>https://github.com/nzbgetcom/nzbget/</Project>
+  <Overview>This is a fork of the original NZBGet project formerly maintained by hugbug. The nzbget.com project is an extension of the original, and is maintained in honor of and with respect to its maintainer of many years. We hope to continue where the hugbug left off by providing a useful downloader for the benefit of the Usenet community.&#xD;
+&#xD;
+More information available at https://nzbget.com</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:6789]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/nzbget.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/nzbget.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1706859236</DateInstalled>
+  <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;</DonateText>
+  <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
+  <Requires/>
+  <Config Name="Host Port for 6789" Target="6789" Default="6789" Mode="tcp" Description="" Type="Port" Display="always-hide" Required="true" Mask="false">6789</Config>
+  <Config Name="Host Path for /config" Target="/config" Default="/mnt/cache/appdata/nzbget" Mode="rw" Description="" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/cache/appdata/nzbget</Config>
+  <Config Name="Downloads" Target="/downloads " Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="TZ" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">America/New_York</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="002" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">002</Config>
+</Container>
