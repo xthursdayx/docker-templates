@@ -1,57 +1,32 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>RoonServer</Name>
-  <Repository>steefdebruijn/docker-roonserver</Repository>
-  <Registry>https://hub.docker.com/r/steefdebruijn/docker-roonserver/</Registry>
+  <Repository>ghcr.io/roonlabs/roonserver:latest</Repository>
+  <Registry>https://github.com/roonlabs/roon-docker/pkgs/container/roonserver</Registry>
   <Network>host</Network>
   <MyIP/>
-  <Shell>sh</Shell>
-  <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/129853-support-xthursdayx-roonserver/</Support>
-  <Project>https://roonlabs.com/</Project>
+  <MyMAC/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support>https://github.com/RoonLabs/roon-docker/issues</Support>
+  <Project>https://github.com/RoonLabs/roon-docker</Project>
+  <ReadMe/>
   <Overview>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Overview>
   <Category>MediaServer:Music</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/roonserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/roon-icon.png</Icon>
-  <ExtraParams>--restart unless-stopped</ExtraParams>
+  <ExtraParams>--restart unless-stopped --log-opt max-size=50m --log-opt max-file=3</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1612584320</DateInstalled>
+  <DateInstalled>1790453835</DateInstalled>
   <DonateText>&#x200B; If you appreciate my work please consider buying me a coffee, cheers!&#xA0;&#x1F601;</DonateText>
   <DonateLink>https://www.buymeacoffee.com/xthursdayx</DonateLink>
-  <Description>Docker image for running Roon Server. Roon Server is a software package that provides a &#x201C;headless&#x201D; version of Roon. It will be the brain of your music system, managing your music files, streaming services, and your audio devices. Roon Server is used in conjunction with Roon or Roon Remote, both of which provide control functionality.</Description>
-  <Networking>
-    <Mode>host</Mode>
-    <Publish/>
-  </Networking>
-  <Data>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/roonserver/app</HostDir>
-      <ContainerDir>/app</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/roonserver/data</HostDir>
-      <ContainerDir>/data</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/music</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir></HostDir>
-      <ContainerDir>/backup</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-  </Data>
-  <Environment/>
-  <Labels/>
-  <Config Name="Config" Target="/app" Default="/mnt/cache/appdata/roonserver/app/" Mode="rw" Description="Container Path: /app" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/app</Config>
-  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/roonserver/data/" Mode="rw" Description="Container Path: /data" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/data</Config>
-  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="Container Path: /backup" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="Roon ARC" Target="55000" Default="55000" Mode="tcp" Description="Remote Listening Port" Type="Port" Display="always" Required="false" Mask="false">55000</Config>
+  <Requires/>
+  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Default music folder" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/data/media/music/</Config>
+  <Config Name="Backup" Target="/backup" Default="" Mode="rw" Description="Roon backup destination (optional). Configure in Settings &amp;gt; Backups." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/backup/roon_backup/</Config>
+  <Config Name="Roon ARC" Target="34885" Default="34885" Mode="tcp" Description="Remote Listening Port" Type="Port" Display="always" Required="false" Mask="false">34885</Config>
+  <Config Name="ROON_INSTALL_BRANCH" Target="ROON_INSTALL_BRANCH" Default="production" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">production</Config>
+  <Config Name="TZ" Target="TZ" Default="America/New_York" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">America/Toronto</Config>
+  <Config Name="Data" Target="/Roon" Default="/mnt/cache/appdata/roonserver/" Mode="rw" Description="RoonServer state &#x2014; database, settings, identity, and application binaries. Must be writable and persistent." Type="Path" Display="advanced" Required="true" Mask="false">/mnt/cache/appdata/roonserver/</Config>
 </Container>
