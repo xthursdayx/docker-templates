@@ -22,12 +22,14 @@ Configuration:&#xD;
 &amp;amp;#xD;&#xD;
   PGID - set GroupID&#xD;
 &amp;amp;#xD;&#xD;
- 3000 - WebUI access&#xD;
+ 3001 - HTTPS WebUI access&#xD;
+&amp;amp;#xD;&#xD;
+ 3000 - HTTP Reverse Proxy access&#xD;
 &amp;amp;#xD;&#xD;
   PASSWORD for setting a password for the gPodder WebUI #optional&#xD;
 &amp;amp;#xD;</Overview>
   <Category>Downloaders: MediaApp:Other</Category>
-  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <WebUI>http://[IP]:[PORT:3001]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/gpodder.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/xthursdayx/docker-templates/master/xthursdayx/images/gpodder-icon.png</Icon>
   <ExtraParams>--restart=unless-stopped --shm-size=1gb</ExtraParams>
